@@ -1,0 +1,33 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:go_safe/constants/k_app_colors.dart';
+import 'package:velocity_x/velocity_x.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: "Current location".text.bodyMedium(context).make(),
+        titleSpacing: 0,
+        leadingWidth: 30,
+        leading: Icon(
+          CupertinoIcons.location_solid,
+          color: AppColors.accent(context),
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,1 @@
+class LoginSignupSwitchCubit extends Cubit {}
